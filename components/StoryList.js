@@ -2,7 +2,7 @@ import Link from 'next/link';
 const StoryList = ({ stories }) => (
   <div className="story-list">
     {stories.map((story) => (
-      <div className="story" key={story.div}>
+      <div className="story" key={story.id}>
         <h2 className="story-title">
           <a href={story.url}>{story.title}</a>
         </h2>
