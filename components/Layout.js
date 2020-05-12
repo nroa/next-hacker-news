@@ -19,7 +19,7 @@ const Layout = ({ children, title, description}) => (
       {children}
     </div>
 
-    <style>{`
+    <style jsx>{`
       .container {
         max-width: 800px;
         margin: 0 auto;
