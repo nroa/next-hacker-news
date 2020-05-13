@@ -4,7 +4,10 @@
   "description": "A HAcker News clone made with NExt.js",
   "main": "server.js",
   "scripts": {
-    "dev": "next"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "heroku-postbuild": "next build"
   },
   "author": "Next course Udemy",
   "license": "ISC",
@@ -12,6 +15,7 @@
     "isomorphic-fetch": "^2.2.1",
     "next": "^9.3.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sw-precache-webpack-plugin": "^1.0.0"
   }
 }
