@@ -4,10 +4,11 @@
   "description": "A HAcker News clone made with NExt.js",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "next -p 3000",
     "build": "next build",
-    "heroku-postbuild": "next build"
+    "export": "next export",
+    "deploy": "cd out && now --public",
+    "now-build": "next build && next export -o dist"
   },
   "author": "Next course Udemy",
   "license": "ISC",
